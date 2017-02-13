@@ -209,11 +209,8 @@ interface ValidationResult {
     >
       <input
         [disabled]="disabled"
-        class="datepicker__input"
+        type="text"
         [placeholder]="placeholder"
-        [ngStyle]="{'color': altInputStyle ? colors['white'] : colors['black'],
-                    'background-color': altInputStyle ? accentColor : colors['white'],
-                    'border': altInputStyle ? '' : '1px solid #dadada'}"
         (click)="onInputClick()"
         [(ngModel)]="inputText"
         readonly="true"
