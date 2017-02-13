@@ -210,6 +210,7 @@ interface ValidationResult {
       <input
         [disabled]="disabled"
         type="text"
+        [ngStyle]="{'color': colors['white']}"
         [placeholder]="placeholder"
         (click)="onInputClick()"
         [(ngModel)]="inputText"
